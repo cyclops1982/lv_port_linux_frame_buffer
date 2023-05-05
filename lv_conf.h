@@ -30,7 +30,7 @@ extern uint32_t custom_tick_get(void);
  *====================*/
 
 /*Color depth: 1 (1 byte per pixel), 8 (RGB332), 16 (RGB565), 32 (ARGB8888)*/
-#define LV_COLOR_DEPTH 1
+#define LV_COLOR_DEPTH 8
 
 /*Swap the 2 bytes of RGB565 color. Useful if the display has an 8-bit interface (e.g. SPI)*/
 #define LV_COLOR_16_SWAP 0
@@ -540,7 +540,7 @@ extern uint32_t custom_tick_get(void);
  *----------*/
 
 /*A simple, impressive and very complete theme*/
-#define LV_USE_THEME_DEFAULT 1
+#define LV_USE_THEME_DEFAULT 0
 #if LV_USE_THEME_DEFAULT
 
     /*0: Light mode; 1: Dark mode*/
@@ -668,7 +668,7 @@ extern uint32_t custom_tick_get(void);
 *==================*/
 
 /*Enable the examples to be built with the library*/
-#define LV_BUILD_EXAMPLES 1
+#define LV_BUILD_EXAMPLES 0
 
 /*===================
  * DEMO USAGE
@@ -700,6 +700,7 @@ extern uint32_t custom_tick_get(void);
 #endif
 
 /*--END OF LV_CONF_H--*/
+
 
 #endif /*LV_CONF_H*/
 
